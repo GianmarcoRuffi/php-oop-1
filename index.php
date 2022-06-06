@@ -48,9 +48,21 @@ $myMovies = [
     <title>OOP Movies</title>
 </head>
 <body>
+
+<h1>Movie Database</h1>
     
-<?php foreach ($myMovies as $key => $value)
-    ?>
+<?php foreach ($myMovies as $key => $value) {
+
+$movie = new Movie($value['title'],$value['year'],$value['genre'],$value['director'],);
+
+}
+?>
+
+<h2>Title: <?php echo $movie->getTitle(); ?></h2>
+<h5>Year: <?php echo $movie->getYear(); ?></h5>
+<h5>Genre: <?php echo $movie->getGenre(); ?></h5>
+<h5>Director: <?php echo $movie->getDirector(); ?></h5>
+
 
 </body>
 </html>

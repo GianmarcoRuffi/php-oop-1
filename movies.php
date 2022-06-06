@@ -6,12 +6,12 @@ protected $year;
 protected $genre;
 protected $director;
 private $ratedvm;
-}
 
 function __construct($_title, $_year, $_genre){
     $this->title = $_title;
     $this->year = $_year;
     $this->genre = $_genre;
+    $this->director = $_director;
 }
 
 public function getTitle(){
@@ -19,17 +19,18 @@ public function getTitle(){
 }
 
 public function getYear(){
-    return $this->year;
+   return $this->year;
 }
 
 
 public function getGenre(){
-    return $this->genre;
+   return $this->genre;
 }
-
 public function getDirector(){
-    return $this->director;
+   return $this->director;
 }
 
+
+};
 
 ?>
