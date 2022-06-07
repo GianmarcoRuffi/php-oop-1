@@ -22,13 +22,17 @@ public function getYear(){
    return $this->year;
 }
 
-
 public function getGenre(){
    return $this->genre;
 }
 public function getDirector(){
    return $this->director;
 }
+
+public function setRatedvm($_ratedvm){
+   return $this->ratedvm = $_ratedvm;
+}
+
 
 
 };

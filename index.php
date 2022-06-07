@@ -15,25 +15,29 @@ $myMovies = [
         'title' => 'Alien',
         'year' => '1979',
         'genre' => 'Sci-Fi, Horror',
-        'director' => 'Ridley Scott'
+        'director' => 'Ridley Scott',
+        'ratedvm' => 'YES'
     ],
     [
         'title' => 'The Terminator',
         'year' => '1984',
         'genre' => 'Thriller, Sci-Fi',
-        'director' => 'James Cameron'
+        'director' => 'James Cameron',
+        'ratedvm' => 'NO'
     ],
     [
         'title' => 'Hellraiser',
         'year' => '1987',
         'genre' => 'Horror, Thriller',
-        'director' => 'Clive Barker'
+        'director' => 'Clive Barker',
+        'ratedvm' => 'YES',
     ],
     [
         'title' => 'Police Academy',
         'year' => '1984',
         'genre' => 'Comedy, Action',
-        'director' => 'Hugh Wilson'
+        'director' => 'Hugh Wilson',
+        'ratedvm' => 'NO',
     ]
     ];
 
@@ -56,6 +60,7 @@ $myMovies = [
 <?php foreach ($myMovies as $key => $value) {
 
 $movie = new Movie($value['title'],$value['year'],$value['genre'],$value['director'],);
+$movie -> setRatedvm($value['ratedvm']);
 // var_dump($movie);
 
 
